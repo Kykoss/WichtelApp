@@ -12,7 +12,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Button Grid.Column="0" 
-                Content="Test" Command="{Binding TestCommand}"  
+                Content="Test Tombola" Command="{Binding TestTombolaCommand}"  
                 Height="50" 
                 VerticalAlignment="Bottom"
                 Margin="10,0"/>

@@ -1,6 +1,6 @@
 ﻿namespace WichtelApp
 {
-    internal class User
+    public class Wichtel
     {
         public string FirstName { get; }
 
@@ -8,14 +8,13 @@
 
         public string Email { get; }
 
-        public User LastPartner { get; }
+        public Wichtel LastReciever { get; set; }
 
-        public User(string firstName, string lastName, string email, User lastPartner)
+        public Wichtel(string firstName, string lastName, string email)
         {
             FirstName = firstName;
             LastName = lastName;
             Email = email;
-            LastPartner = lastPartner;
         }
     }
 }

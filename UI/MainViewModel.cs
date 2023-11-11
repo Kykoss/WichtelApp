@@ -5,11 +5,11 @@ namespace WichtelApp.UI
 {
     public class MainViewModel
     {
-        private ICommand myTestCommand = new TestCommand();
+        private ICommand myTestTombolaCommand = new TestTombolaCommand();
         private ICommand mySendTestMailCommand = new SendTestMailCommand();
         private ICommand mySendCommand = new SendMailsCommand();
 
-        public ICommand TestCommand => this.myTestCommand;
+        public ICommand TestTombolaCommand => this.myTestTombolaCommand;
 
         public ICommand SendTestMailCommand => this.mySendTestMailCommand;
 
