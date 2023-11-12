@@ -13,7 +13,7 @@ namespace WichtelApp.Commands
 
         public void Execute(object? parameter)
         {
-            MailHelper.SendTombolaResult(TombolaHelper.GetWichtelDrawing(ParticipantHelper.GetParticipants()));
+            //MailHelper.SendTombolaResult(TombolaHelper.GetWichtelDrawing(ParticipantHelper.GetParticipants()));
         }
     }
 }

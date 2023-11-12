@@ -6,14 +6,14 @@ namespace WichtelApp.Helper
     {
         public static List<Wichtel> GetParticipants()
         {
-            var kara = new Wichtel("Kara", "Schmich", "");
-            var robin = new Wichtel("Robin", "Olde Meule", "");
-            var lukas = new Wichtel("Lukas", "Wewel", "");
-            var leon = new Wichtel("Leon", "Campos Ribeiro", "");
-            var jannik = new Wichtel("Jannik", "Kolthof", "");
-            var moritz = new Wichtel("Moritz Benjamin", "Jacobs", "");
-            var jan = new Wichtel("Jan", "Steinkamp", "");
-            var ingo = new Wichtel("Ingo", "Wilkosinski", "");
+            var kara = new Wichtel("Kara", "Schmich", "h@test.de");
+            var robin = new Wichtel("Robin", "Olde Meule", "h@test.de");
+            var lukas = new Wichtel("Lukas", "Wewel", "h@test.de");
+            var leon = new Wichtel("Leon", "Campos Ribeiro", "h@test.de");
+            var jannik = new Wichtel("Jannik", "Kolthof", "h@test.de");
+            var moritz = new Wichtel("Moritz Benjamin", "Jacobs", "h@test.de");
+            var jan = new Wichtel("Jan", "Steinkamp", "h@test.de");
+            var ingo = new Wichtel("Ingo", "Wilkosinski", "h@test.de");
 
             #region LastPartner
 
@@ -28,26 +28,6 @@ namespace WichtelApp.Helper
 
             jannik.LastReceiver = jan;
             jan.LastReceiver = jannik;
-
-            #endregion
-
-            #region Stories
-
-            kara.BackGroundStory = "";
-
-            robin.BackGroundStory = "";
-
-            lukas.BackGroundStory = "";
-
-            leon.BackGroundStory = "";
-
-            jannik.BackGroundStory = "";
-
-            moritz.BackGroundStory = "";
-
-            jan.BackGroundStory = "";
-
-            ingo.BackGroundStory = "";
 
             #endregion
 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System;
 using System.Windows;
+using System.Linq;
 
 namespace WichtelApp.Helper
 {
@@ -11,15 +12,41 @@ namespace WichtelApp.Helper
     {
         private static MailAddress FromAdress => new MailAddress("wichtelschmichtel@gmx.de");
 
+        public static MailMessage GetMailMessage(KeyValuePair<Wichtel, Wichtel> draw)
+        {
+            var gifter = draw.Key;
+            var receiver = draw.Value;
+
+            var mailMessage = new MailMessage();
+            mailMessage.From = MailHelper.FromAdress;
+            mailMessage.To.Add(gifter.Email);
+            mailMessage.Subject = "Test Email Wichteln";
+            mailMessage.Body = $"Hallo {gifter.FirstName},\n\nEs ist wieder soweit! Das diesjaehrige Wichteln des Vereins fuer Allzeit inkompetente dumme Spassten (AIDS e.V.) steht wieder an und Sie koennen stolz " +
+                $"darauf sein ein Teil dieser tollen und hoffentlich einzigartigen Truppe zu sein!\n\nWie bereits angekuendigt, sollte es dieses Jahr ausgeschlossen sein, dass Sie den gleichen Partner wie im letzten Jahr bekommen.\n" +
+                $"Falls dies dennoch der Fall sein sollte, bitte eben Bescheid geben. Dann wird die Logik fuer das naechste Jahr noch einmal ueberarbeitet!\n\n";
+
+            if (receiver.LastName == "Kolthof")
+            {
+                mailMessage.Body += "Leider muss ich Ihnen untroestlicherweise mitteilen, dass sie dieses Jahr das schwarze Los gezogen haben...\nIhr diesjaehrige Wichtelpartner ist niemand niedertraechtigeres als Jannik Kolthof, " +
+                    $"der wahre Zerstoerer von Habibibyte und vermutlich auch vieler weiterer Mikrokosmen dieser Erde.\n\nSie sind selbstverstaendlich weiterhin gerne eingeladen an der dies jaehrigen Weihnachtsfeier teilzunehmen, " +
+                    $"aber Sie wissen genau so gut wie ich, dass Sie sich bereits auf ein zweites Weihnachten im Fruehling 2024 mit Herrn Kolthof freuen duerfen!";
+            }
+            else
+            {
+                mailMessage.Body += $"Dieses Jahr haben Sie die Ehre den oder die ehrenhafte {receiver.FirstName} {receiver.LastName} zu beschenken! Bitte suchen Sie ein passendes und freudeerweckendes Geschenk aus! " +
+                    $"Ich bin mir sicher, dass diese Person es verdient hat!";
+            }
+
+            mailMessage.Body += "\n\nWeitere Informationen zu dem Budget und zu der diesjaehrigen Weihnachtsfeier folgen in den kommenden Wochen!";
+
+            return mailMessage;
+        }
+
         public static void SendTestMail()
         {
-            MailMessage mailMessage = new MailMessage();
-            mailMessage.From = MailHelper.FromAdress;
-            mailMessage.To.Add("robin.olde.meule1997@gmail.com");
-            mailMessage.Subject = "Test Email Wichteln";
-            mailMessage.Body = "Hallo Robert ich bin es nochmal!";
+            var mockedDraw = new KeyValuePair<Wichtel, Wichtel>(new Wichtel("Robin", "Olde Meule", "robin.olde.meule1997@gmail.com"), new Wichtel("Lukas", "Wewel", string.Empty));
 
-            MailHelper.SendSMTPEmail(mailMessage);
+            MailHelper.SendSMTPEmail(MailHelper.GetMailMessage(mockedDraw));
         }
 
         private static void SendSMTPEmail(MailMessage message)
@@ -35,45 +62,6 @@ namespace WichtelApp.Helper
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
                 client.Send(message);
             }
-        }
-
-        public static void SendTombolaResult(Dictionary<Wichtel, Wichtel> tombolaResult)
-        {
-            const string failSafeFilePath = @"C:\temp\WichtelFailSafe.log";
-
-            if (tombolaResult == null || tombolaResult.Count == 0)
-            {
-                throw new ArgumentException("Invalid Tombola Result!");
-            }
-
-            // Write the results to the failsafe file
-            using (var sw = new StreamWriter(failSafeFilePath))
-            {
-                sw.WriteLine("Gifter => Receiver\n");
-                foreach (var draw in tombolaResult)
-                {
-                    sw.WriteLine($"{draw.Key.FirstName} => {draw.Value.FirstName}");
-                }
-            }
-
-            // Do NOT send the result until it is garuanteed that the failsafe file has bee generated!
-            if (!File.Exists(failSafeFilePath))
-            {
-                throw new FileNotFoundException($"The fail safe filde could not be found ({failSafeFilePath})!");
-            }
-
-            string[] contentLines;
-            using (var sr = new StreamReader(failSafeFilePath))
-            {
-                contentLines = sr.ReadToEnd().Split("\r");
-            }
-
-            if (contentLines.Length < 9) 
-            {
-                throw new Exception("Something seems to be off with the failsafe file");
-            }
-
-            MessageBox.Show("Sieht gut aus!");
         }
     }
 }
