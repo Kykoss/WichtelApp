@@ -15,6 +15,8 @@ namespace WichtelApp.Commands
         {
             var tombolaResults = TombolaHelper.GetWichtelDrawing(ParticipantHelper.GetParticipants());
 
+            RolloutHelper.CreateAndValidateFailSafe(tombolaResults);
+
             foreach (var result in tombolaResults)
             {
                 var mailMessage = MailHelper.GetMailMessage(result);
