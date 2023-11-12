@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Input;
+using WichtelApp.Helper;
 
 namespace WichtelApp.Commands
 {
@@ -12,7 +13,7 @@ namespace WichtelApp.Commands
 
         public void Execute(object? parameter)
         {
-            MessageBox.Show("Oh Junge jetzt gehts los!");
+            MailHelper.SendTombolaResult(TombolaHelper.GetWichtelDrawing(ParticipantHelper.GetParticipants()));
         }
     }
 }
