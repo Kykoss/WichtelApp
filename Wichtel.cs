@@ -8,7 +8,9 @@
 
         public string Email { get; }
 
-        public Wichtel LastReciever { get; set; }
+        public string BackGroundStory { get; set; }
+
+        public Wichtel LastReceiver { get; set; }
 
         public Wichtel(string firstName, string lastName, string email)
         {

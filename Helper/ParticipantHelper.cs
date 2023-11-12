@@ -15,17 +15,41 @@ namespace WichtelApp.Helper
             var jan = new Wichtel("Jan", "Steinkamp", "steinkampjan@gmail.com");
             var ingo = new Wichtel("Ingo", "Wilkosinski", "ingo.wilkosinski@gmx.de");
 
-            kara.LastReciever = moritz;
-            moritz.LastReciever = kara;
+            #region LastPartner
 
-            robin.LastReciever = ingo;
-            ingo.LastReciever = robin;
+            kara.LastReceiver = moritz;
+            moritz.LastReceiver = kara;
 
-            lukas.LastReciever = leon;
-            leon.LastReciever = lukas;
+            robin.LastReceiver = ingo;
+            ingo.LastReceiver = robin;
 
-            jannik.LastReciever = jan;
-            jan.LastReciever = jannik;
+            lukas.LastReceiver = leon;
+            leon.LastReceiver = lukas;
+
+            jannik.LastReceiver = jan;
+            jan.LastReceiver = jannik;
+
+            #endregion
+
+            #region Stories
+
+            kara.BackGroundStory = "";
+
+            robin.BackGroundStory = "";
+
+            lukas.BackGroundStory = "";
+
+            leon.BackGroundStory = "";
+
+            jannik.BackGroundStory = "";
+
+            moritz.BackGroundStory = "";
+
+            jan.BackGroundStory = "";
+
+            ingo.BackGroundStory = "";
+
+            #endregion
 
             return new List<Wichtel>()
             {

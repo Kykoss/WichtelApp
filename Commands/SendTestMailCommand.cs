@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Input;
+using WichtelApp.Helper;
 
 namespace WichtelApp.Commands
 {
@@ -9,9 +10,6 @@ namespace WichtelApp.Commands
 
         public bool CanExecute(object? parameter) => true;
 
-        public void Execute(object? parameter)
-        {
-            throw new NotImplementedException();
-        }
+        public void Execute(object? parameter) => MailHelper.SendTestMail();
     }
 }

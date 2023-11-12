@@ -13,7 +13,7 @@ namespace WichtelApp.Helper
 
             foreach (var wichtel in wichtelList)
             {
-                var possibleRecievers = wichtelList.Where(x => x != wichtel && x.LastReciever != wichtel).ToList();
+                var possibleRecievers = wichtelList.Where(x => x != wichtel && x.LastReceiver != wichtel).ToList();
                                 
                 results.Add(wichtel, possibleRecievers[rnd.Next(possibleRecievers.Count - 1)]);
             }
