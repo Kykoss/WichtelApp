@@ -11,23 +11,23 @@ namespace WichtelApp.Helper
             var lukas = new Wichtel("Lukas", "Wewel", "h@test.de");
             var leon = new Wichtel("Leon", "Campos Ribeiro", "h@test.de");
             var jannik = new Wichtel("Jannik", "Kolthof", "h@test.de");
-            var moritz = new Wichtel("Moritz Benjamin", "Jacobs", "h@test.de");
+            var moritz = new Wichtel("Moritz", "Jacobs", "h@test.de");
             var jan = new Wichtel("Jan", "Steinkamp", "h@test.de");
             var ingo = new Wichtel("Ingo", "Wilkosinski", "h@test.de");
 
             #region LastPartner
 
-            kara.LastReceiver = moritz;
-            moritz.LastReceiver = kara;
+            kara.LastReceiver = robin;
+            moritz.LastReceiver = jan;
 
-            robin.LastReceiver = ingo;
-            ingo.LastReceiver = robin;
+            robin.LastReceiver = lukas;
+            ingo.LastReceiver = moritz;
 
-            lukas.LastReceiver = leon;
-            leon.LastReceiver = lukas;
+            lukas.LastReceiver = kara;
+            leon.LastReceiver = jannik;
 
-            jannik.LastReceiver = jan;
-            jan.LastReceiver = jannik;
+            jannik.LastReceiver = ingo;
+            jan.LastReceiver = leon;
 
             #endregion
 

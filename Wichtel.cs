@@ -1,4 +1,6 @@
-﻿namespace WichtelApp
+﻿using System.Windows.Controls;
+
+namespace WichtelApp
 {
     public class Wichtel
     {
@@ -8,7 +10,9 @@
 
         public string Email { get; }
 
-        public string BackGroundStory { get; set; }
+        public string BackGroundStory => Resources.ResourceManager.GetString($"Story_{this.FirstName}");
+
+        public Image Picture => (Image)Resources.ResourceManager.GetObject(this.FirstName);
 
         public Wichtel LastReceiver { get; set; }
 

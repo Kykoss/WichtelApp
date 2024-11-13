@@ -9,6 +9,7 @@ namespace WichtelApp.UI
         private ICommand mySendTestMailCommand = new SendTestMailCommand();
         private ICommand mySendCommand = new SendMailsCommand();
         private ICommand myTestMailContentCommand =  new TestMailContentCommand();
+        private ICommand myTestMailBody = new TestMailBodyCommand();
 
         public ICommand TestTombolaCommand => this.myTestTombolaCommand;
 
@@ -17,5 +18,7 @@ namespace WichtelApp.UI
         public ICommand TestMailContentCommand => this.myTestMailContentCommand;
 
         public ICommand SendCommand => this.mySendCommand;
+
+        public ICommand TestMailBody => this.myTestMailBody;
     }
 }

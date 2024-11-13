@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Ingo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ingo.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Jan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jan.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Jannik" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jannik.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Kara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kara.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Leon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Leon.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Lukas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lukas.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Moritz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Moritz.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Robin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Robin.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Story_Ingo" xml:space="preserve">
+    <value>In den dichten Wäldern Polens, dort, wo die Bäume so alt und groß wie Riesen sind und die Flüsse dunkel und tief fließen, lebte der legendäre Biber Bober Willokoschinski. Man nannte ihn „Bober Wielki,” den „Großen Biber,” denn seine Baukünste waren in der ganzen Region berüchtigt. In einem versteckten Flusslauf baute Willo seine Dämme, die so stark und gewaltig waren, dass selbst die mächtigsten Schiffe an ihnen scheiterten und die Wasserstraße blockierten. &lt;br&gt;
+    &lt;br&gt; Bober Willokoschinski war kein gewöhnlicher Biber. Es hieß, er besäße die Kraft von zehn Bibern und den Verstand eines Baumeisters. In Vollmondnächten sah man ihn, wie er gewaltige Baumstämme durch das Wasser zog und sie mit einer unheimlichen Präzision zu Dämmen zusammenfügte. Manche sagten, er arbeite nicht allein; die Geister des Waldes halfen ihm, indem sie den Fluss so lenkten, dass seine Dämme noch mächtiger wurden. So konnte er in nur einer einzigen Nacht ein Werk vollenden, das so stabil und stark war, dass es ganze Flussläufe umleitete. &lt;br&gt;
+    &lt;br&gt; Eines Tages hörte ein Schiffskapitän von den Dämmen des Bober Willokoschinski und beschloss, den Fluss mit voller Kraft zu befahren, um den Damm zu durchbrechen. Doch als er näher kam, bemerkte er das imposante Bauwerk: Ein Damm aus Baumstämmen und Steinen, so fest wie eine Festung. Noch ehe das Schiff näher kam, sprang Bober Willokoschinski aus dem Wasser, schnappte sich die größten Stämme und verstärkte sein Werk mit einem geschickten Biss und Schub. Das Schiff prallte gegen den Damm und begann zu sinken. Der Kapitän und seine Besatzung mussten sich geschlagen geben und traten den Heimweg an, während Bober stolz auf seinem Bauwerk saß. &lt;br&gt;
+    &lt;br&gt; Bis heute erzählt man sich von Bober Willokoschinskis unzerstörbaren Dämmen, die noch immer die Flüsse der Region prägen, und von seiner Stärke, die Flüsse beherrschen und Schiffe zum Stillstand bringen konnte. &lt;br&gt;
+    &lt;br&gt;
+    &lt;i&gt; Bober Willokoschinski, mistrz rzek i tam, Silniejszy od wiatru, stoi sam! Tamy jak góry, w wodach się skryły, By nawet statki przed nim się chyliły. &lt;br&gt;
+      &lt;br&gt; (Bober Willokoschinski, Meister der Flüsse, Stärker als der Wind, steht er allein! Dämme wie Berge, tief in den Wassern, Selbst große Schiffe müssen vor ihm niederknien.) &lt;/i&gt;</value>
+  </data>
+  <data name="Story_Jan" xml:space="preserve">
+    <value>Jan war bekannt als der ärmste Student nördlich des Äquators – ein Mann ohne finanziellen Spielraum, aber mit einem Herzen, das für Festivals und Konzerte schlug. In seiner kleinen Ein-Zimmer-Wohnung stapelten sich unzählige Pflanzen, von denen einige längst die Fensterbank erobert hatten und in einer Art wilder Dschungelgemeinschaft lebten. Trotz seiner begrenzten Mittel gab Jan das wenige, was er hatte, lieber für Konzerttickets und gelegentliche Mitbringsel für seine Pflanzensammlung aus. &lt;br&gt;
+    &lt;br&gt; Nach zwei Jahren im IT-Studium fasste Jan schließlich einen kühnen Entschluss. Er stellte fest, dass sein Computerwissen ihm nicht half, das große Ziel – ein Leben voller Musik und Events – zu finanzieren. Also brach er das Studium kurzerhand ab und wechselte in die Betriebswirtschaftslehre, überzeugt davon, dass diese Entscheidung ihm mehr Zeit zum Feiern und Joggen verschaffen würde. Denn laut eigenen Aussagen, die er in einer lokalen Quizshow machte, hatte er wieder „aktiv mit dem Sport begonnen“, obwohl die Wahrheit eher war, dass er gelegentlich in ausgelatschten Turnschuhen durch den Stadtpark joggte. &lt;br&gt;
+    &lt;br&gt; Mit dem neu erlernten BWL-Wissen widmete sich Jan dann mit großer Hingabe seiner wahren Kunst: dem Management seines erstaunlich gut organisierten „Geldleih-Haushalts.“ Er wusste inzwischen, dass eine kleine Investition in nette Worte und gute Laune die Kreditkonditionen unter seinen Freunden erheblich verbessern konnte. So optimierte er sein Netzwerk an kleinen Darlehen, um seine Pflanzen zu pflegen und sich ab und zu ein Festival-Ticket zu leisten. Jan lebte weiterhin bescheiden, aber seine Kreisläufe der Freundschaft und „strategischen Darlehen“ machten ihn unbestritten zum lebensfreudigsten „Finanzmanager der Mittellosigkeit“ in der ganzen Stadt.</value>
+  </data>
+  <data name="Story_Jannik" xml:space="preserve">
+    <value>Jannich, ein Mönch mit beeindruckenden Muskelbergen, wuchs in einem abgelegenen Kloster in Hoogstede auf. Das Kloster war so extrem abgelegen, dass es in einem Umkreis von 100 Kilometern nur das Kloster und ein einzelnes Fitnessstudio gab. Bereits im zarten Alter von vier Jahren begann Jannich mit dem Kraftsport, da es im Kloster kaum andere Beschäftigungen gab. Um seine Muskeln aufzubauen, setzte er auf einen besonderen Joghurt, den er nach einem geheimen Familienrezept selbst herstellte. Dieser Jogurt war nicht nur reich an Protein, sondern offenbar auch an mystischer Kraft, die seine Stärke immer weiter wachsen ließ. Bis heute bildet dieser "Heilige Jogurt" die Grundlage seiner täglichen Ernährung. &lt;br&gt;
+    &lt;br&gt; Doch Jannichs Talente reichten über das Gewichtheben hinaus. Im Laufe der Jahre entwickelte er eine unglaubliche Leidenschaft für das Joghurt-Wettessen, in dem er bald so gut wurde, dass er sich bereits mit 16 Jahren für die Weltmeisterschaft im Vatikan qualifizierte. In einem aufregenden Finale trat Jannich gegen die renommierten Esser des rivalisierenden türkischen Klosters Habibibyte an. Mit eiserner Disziplin und einem immensen Vorrat an selbstgemachtem Jogurt schaffte er es, seine Gegner beeindruckend zu besiegen und damit die Meisterschaft zu gewinnen. &lt;br&gt;
+    &lt;br&gt; Seit diesem glorreichen Tag ist Jannich weltweit als der „Joghurt-König“ – kurz JK – bekannt und gefeiert. In den Kreisen der Wettesser und Bodybuilder gilt er als Legende, und sein Ruf eilt ihm voraus: Der muskulöse Mönch, der im Fitnessstudio groß und im Joghurt-Wettessen unschlagbar wurde.</value>
+  </data>
+  <data name="Story_Kara" xml:space="preserve">
+    <value>Die Kara, ne? Die is’ echt ’ne waschechte Norddeutsche, von noch nördlicher als Hamburg – also, dat is’ nich’ ohne! Dat Mädel hat ’ne Kindheit gehabt, die kannste nur im echten Norden haben. Jeden Tag in Gummistiefeln rumlatschen, auch wenn die Sonne scheint. Wattwanderungen bei Ebbe mit Opa, Krabben pulen zum Mittag, und dann jeden Sonntag, jawoll, bei Matschwetter ab inne Kirche mit den dicken Pullovern an. Als Kind hat sie sogar gelernt, das Rethwischer Alphabet zu gebärden, ne heilige, uralte Zeichensprache, die angeblich nur vier Leute auf der Welt richtig drauf haben. Dat war so’n richtiges Erbstück bei ihrer Familie. &lt;br&gt;
+    &lt;br&gt; Eines Tages aber, da passierte ihr wat Unglaubliches. Kara fiel nämlich, stell dir dat mal vor, die Treppe vom 9. Stock ruter. Keine Ahnung, wie die das hinbekommen hat, aber unten im Keller, wo sie schließlich gelandet is’, hörte sie plötzlich ’ne Stimme: „Moin! Is’ alles in Ordnung?“ Kara dacht erst, sie spinnt – bis sie merkte, dass es ’ne Kellerassel war, die da mit ihr sprach! Irgendwie, durch diesen Sturz, hatte sie plötzlich die Fähigkeit, mit Tieren zu reden. Von dem Tag an war Kara an der Nordseeküste nie wieder alleine. &lt;br&gt;
+    &lt;br&gt; Sie konnte sich mit Möwen über den besten Spot für Fischreste unterhalten, mit Wattwürmern über die Tide quatschen, und die Fische im Meer hatten immer wat zu erzählen. Kara liebte das, da war immer Leben um sie rum. Nur der wöchentliche Gang übern Fischmarkt, dat war nich’ so einfach. Dat war ein Höllenlärm! Alle Fische schrien durcheinander, wollten alle noch wat loswerden, bevor sie aufm Teller landeten. Aber für Kara war’s trotzdem ein Segen – mit Tieren zu schnacken, dat konnt eben nur sie, die echte Norddeutsche mit dem Herz für die Küste.</value>
+  </data>
+  <data name="Story_Leon" xml:space="preserve">
+    <value>In den Bergen Mexikos, wo die Nächte kühl und die Dämmerung golden schimmerte, lebte der legendäre Senor Leon. Man nannte ihn "El Maestro de los Metales," denn sein Ruf als Meister der Metallarbeiten war weit über die Dörfer hinaus bekannt. In einem kleinen, unscheinbaren Dorf, das von riesigen Kakteen und verwunschenen Agaven umgeben war, führte Senor Leon eine kleine Schmiede, in der er Wunderwerke aus Metall schuf. &lt;br&gt;
+    &lt;br&gt; Es hieß, dass Senor Leon das Metall nicht nur schmiedete, sondern mit einer geheimnisvollen Energie durchdrang. Manche Dorfbewohner behaupteten, er könne mit den alten Göttern sprechen und das Feuer selbst zähmen. Nachts, wenn das Licht seiner Schmiede in gespenstischem Grün über die Hügel leuchtete, verstummte das ganze Dorf. Einmal im Jahr, zur Nacht des Vollmondes, verschloss Senor Leon die Türen seiner Schmiede und arbeitete bis zum Morgengrauen – allein, begleitet nur vom Flüstern der Flammen und den Funken, die in der Dunkelheit tanzten. &lt;br&gt;
+    &lt;br&gt; Eines Abends trat ein junger Krieger an seine Tür und brachte ein zerbrochenes Schwert, das im Kampf gegen ein dunkles Ungeheuer versagt hatte. Der Krieger bat Senor Leon, das Schwert zu reparieren und es mit einer besonderen Macht zu erfüllen. Schweigend nahm Senor Leon das Schwert, betrachtete es lange, und versprach schließlich, es bis zum nächsten Vollmond zu vollenden. Wochenlang schmiedete er an der Klinge, bis sie in einem seltsamen bläulichen Glanz erstrahlte. Als er sie dem Krieger zurückgab, warnte er: „Diese Klinge wird dir nur so lange dienen, wie dein Herz rein ist.“ Der Krieger nahm das Schwert und verschwand im Nebel – und bis heute erzählt man sich von den Wundern, die der Meister der Metalle in seiner stillen Schmiede vollbrachte.</value>
+  </data>
+  <data name="Story_Lukas" xml:space="preserve">
+    <value>In einem abgelegenen Tal, verborgen zwischen dunklen Wäldern und nebelverhangenen Hügeln, lebte ein junger Mann namens Lukas. Obwohl Lukas ungewöhnlich groß war, fast so hoch wie die Bäume, war er schmal und schmächtig, mit feinen Händen, die ihn oft im Stich ließen. Seit seiner Kindheit litt er an einer chronischen Sehnenscheidenentzündung, die ihm selbst die einfachsten Bewegungen schmerzhaft erschwerte. Doch Lukas trug einen eisernen Willen in sich: Er wollte den sagenumwobenen Pfad zum Exil beschreiten und sich den Prüfungen des legendären Skill Trees stellen, der nur die würdigsten Wanderer belohnte. &lt;br&gt;
+    &lt;br&gt; Eines Morgens, mit einer schlichten Tasche und schmerzenden Handgelenken, begann Lukas seine Reise. Tag um Tag kämpfte er sich voran, und die Schmerzen waren seine ständigen Begleiter. Als er schließlich vor dem gigantischen Skill Tree stand, der wie ein endloser Turm aus Ästen und Blättern in den Himmel ragte, wusste er, dass jede Prüfung hier ihn an seine Grenzen bringen würde. Jeder Ast versprach neue Fähigkeiten, doch jede Stufe war durch eine schwere Herausforderung verschlossen. &lt;br&gt;
+    &lt;br&gt; Zu Beginn testete der Baum Lukas mit kleinen Aufgaben – das Beherrschen eines kleinen Feuers, das Lösen kniffliger Rätsel. Doch die Fähigkeiten, die er auf diesem Weg erlernte, forderten immer mehr Geschick, Konzentration und Kraft. Mit jedem Schritt pochte der Schmerz in seinen Handgelenken stärker, und jeder neue Griff, jeder schmerzhafte Zug an den Ästen erinnerte ihn an die Entzündung, die ihn nicht losließ. Doch Lukas ließ sich nicht aufhalten. Er lernte, mit der Pein zu leben, sie zu akzeptieren und jeden Schritt trotzdem zu wagen. &lt;br&gt;
+    &lt;br&gt; In der letzten Ebene des Skill Trees, hoch oben in der Krone des Baumes, erwartete ihn die schwerste Prüfung. Sie forderte, dass er alle erlernten Kräfte vereinte, um ein komplexes, fließendes Muster aus Energie in die Luft zu zeichnen, das den Pfad zum Exil öffnen würde. Sein ganzer Körper schmerzte, und seine Hände zitterten vor Erschöpfung. Doch Lukas atmete tief, ignorierte die stechenden Schmerzen in seinen Sehnen und zeichnete das Muster, mit einer Präzision und Hingabe, die ihn seine Leiden vergessen ließ. Als das Muster aufleuchtete, öffnete sich vor ihm ein strahlender Weg ins Unbekannte. &lt;br&gt;
+    &lt;br&gt; Ohne zu zögern trat Lukas in das Licht – triumphierend, trotz der Schmerzen, die ihn begleitet hatten. Und so ging er seinen Weg ins Exil, ein Held, dessen größte Stärke nicht in seinen Händen, sondern in seiner ungebrochenen Entschlossenheit lag.</value>
+  </data>
+  <data name="Story_Moritz" xml:space="preserve">
+    <value>Mortimer wuchs als Waisenkind in einer kleinen Stadt auf, in der die Legenden vom berüchtigten Drucker Print Eastwood kursierten. Eastwood, der gefürchtete Meister der Druckkunst, hatte Mortimers Eltern in einer blutigen Tintenexplosion getötet, als Mortimer noch ein kleiner Junge war. Seit diesem Tag brodelte ein unstillbarer Hass in ihm – Hass auf Drucker und alles, was sie in diese Welt brachten. &lt;br&gt;
+    &lt;br&gt; Mit 18 Jahren machte sich Mortimer auf, um Rache zu nehmen. Mit nichts als Entschlossenheit und einem alten Stempelkissen seines Vaters zog er in den „Großen Druckerkreuzzug“, entschlossen, alle Drucker zu vernichten, die sich ihm in den Weg stellten. Schließlich stand er dem legendären Donald Druck gegenüber, einem riesigen, verstaubten Drucker, der es wie kein anderer verstand, fehlerfreie Schrift auf jedes Papier zu bringen und dabei niemanden zu schonen. &lt;br&gt;
+    &lt;br&gt; Der Kampf war episch: Tinte spritzte, Patronen platzten, Papier wirbelte wie ein Orkan. Doch schließlich siegte Mortimer und riss die Farbpatronen aus dem klobigen Gehäuse des Canons. Diese Patronen enthielten nicht nur normale Tinte, sondern die Essenz aller Farben – Cyan, Magenta, Gelb und Schwarz, in der reinen Form, die kein anderer Drucker herstellen konnte. &lt;br&gt;
+    &lt;br&gt; Als Mortimer die Patronen an sich nahm, durchströmte ihn eine seltsame Kraft. Fortan konnte er, wie ein Chamäleon, die Farben seiner Umgebung annehmen. Diese Fähigkeit machte ihn nahezu unsichtbar, perfekt für seinen Rachefeldzug gegen die letzte Bastion der Druckerwelt: die „Lexmark-Legion“. Und so zog Mortimer, getarnt und geschickt, weiter durch die Lande, bis keine einzige Druckerpatrone mehr Tinte vergießen konnte.</value>
+  </data>
+  <data name="Story_Robin" xml:space="preserve">
+    <value>Robin war in der Grafschaft Shitdorf als der verrückteste Wissenschaftler weit und breit bekannt. Mit ungebändigtem Forscherdrang führte er regelmäßig Experimente an den Tauben der Gegend durch, was von den Anwohnern entweder belächelt oder beargwöhnt wurde. Er ließ die Vögel winzige Helme tragen, fütterte sie mit seltsamen Pulvern und setzte sie speziellen Lichtexperimenten aus – alles in der Hoffnung, die Grenzen des Taubenverstandes zu erweitern. Doch eines Tages, als er gerade tief in seine Lieblingsserie Mathemann &amp; Co. KG vertieft war, überkam ihn plötzlich ein Geistesblitz: eine Formel, die alles ändern könnte! Aufgeregt sprang er auf und rannte in seinen Taubenschlag – nur um festzustellen, dass seine gefiederten Probanden ihn sang- und klanglos verlassen hatten. &lt;br&gt;
+    &lt;br&gt; Am Boden zerstört und mit seiner Formel in der Hand, sah er sich in seinem Labor um. Der Blick fiel auf seine drei geliebten Meerschweinchen, die ihn unschuldig aus ihrem Käfig heraus anstarrten. In einem Moment purer Verzweiflung und inspiriert von der genialen TV-Serie, beschloss Robin, den Geistesblitz an seinen pelzigen Freunden auszuprobieren. Mit ein paar schnellen Berechnungen und einigen abenteuerlichen Handgriffen mixte er ein Serum zusammen und verabreichte es den drei Meerschweinchen. &lt;br&gt;
+    &lt;br&gt; Entgegen aller Erwartungen und gänzlich zu Robins Überraschung geschah das Unglaubliche: Die Meerschweinchen begannen zu sprechen! Und nicht nur das – sie entwickelten innerhalb von Minuten ein Verständnis für Sprache und sogar menschliches Verhalten. Jedes Meerschweinchen hatte nun seine eigene Persönlichkeit und eine Meinung, die es gern äußerte. Der Wissenschaftler stand staunend vor dem Käfig, während die drei ihn mit charmanten Anekdoten aus ihrer bisherigen Käfigwelt unterhielten. &lt;br&gt;
+    &lt;br&gt; Seit diesem Tag gönnte sich Robin jeden Sommer eine besondere Auszeit: Er besuchte mit seinen neu gewonnenen Meerschwein-Freunden die großen Festivals der Umgebung. Die Tiere begleiteten ihn nicht nur als treue Gefährten, sondern entwickelten bald eine Vorliebe dafür, an Festivalständen zu sitzen und Robin bei der "Tischdecke" herauszufordern, wobei sie ihn regelmäßig unter den Tisch tranken. Robin genoss diese Festivals nun doppelt – nicht nur als verrückter Wissenschaftler, sondern auch als stolzer Besitzer der wohl menschlichsten Meerschweinchen nördlich des Äquators.</value>
+  </data>
+</root>

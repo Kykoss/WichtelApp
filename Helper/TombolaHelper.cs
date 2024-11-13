@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Windows.Documents;
 
 namespace WichtelApp.Helper
@@ -32,7 +33,7 @@ namespace WichtelApp.Helper
                 TombolaHelper.ShuffleWichtelList(possibleRecievers);
 
                 // Possible if only the wichtel itself and/or it's last partnet is open.
-                if (!possibleRecievers.Any()) 
+                if (!possibleRecievers.Any())
                 {
                     return null;
                 }
@@ -41,6 +42,11 @@ namespace WichtelApp.Helper
 
                 results.Add(wichtel, receiver);
                 openReceivers.Remove(receiver);
+            }
+
+            if (!TombolaHelper.IsTombolaResultOk(wichtelList, results))
+            {
+                return null;
             }
 
             return results;
