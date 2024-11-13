@@ -16,6 +16,7 @@ namespace WichtelApp.Helper
         {
             RolloutHelper.DoubleCheckTombolaResults(tombolaResult);
             RolloutHelper.CreateAndValidateFailSafe(tombolaResult);
+            RolloutHelper.SendResultsToParticipants(tombolaResult);
         }
 
         public static void DoubleCheckTombolaResults(Dictionary<Wichtel, Wichtel> tombolaResult)
@@ -64,7 +65,10 @@ namespace WichtelApp.Helper
 
         public static void SendResultsToParticipants(Dictionary<Wichtel, Wichtel> tombolaResult)
         {
-
+            foreach (var draw in tombolaResult)
+            {
+                MailHelper.SendSMTPEmail(MailHelper.GetMailMessage(draw));
+            }
         }
     }
 }

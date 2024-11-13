@@ -6,14 +6,14 @@ namespace WichtelApp.Helper
     {
         public static List<Wichtel> GetParticipants()
         {
-            var kara = new Wichtel("Kara", "Schmich", "h@test.de");
-            var robin = new Wichtel("Robin", "Olde Meule", "h@test.de");
-            var lukas = new Wichtel("Lukas", "Wewel", "h@test.de");
-            var leon = new Wichtel("Leon", "Campos Ribeiro", "h@test.de");
-            var jannik = new Wichtel("Jannik", "Kolthof", "h@test.de");
-            var moritz = new Wichtel("Moritz", "Jacobs", "h@test.de");
-            var jan = new Wichtel("Jan", "Steinkamp", "h@test.de");
-            var ingo = new Wichtel("Ingo", "Wilkosinski", "h@test.de");
+            var kara = new Wichtel("Kara", "Schmich", string.Empty);
+            var robin = new Wichtel("Robin", "Olde Meule", string.Empty);
+            var lukas = new Wichtel("Lukas", "Wewel", string.Empty);
+            var leon = new Wichtel("Leon", "Campos Ribeiro", string.Empty);
+            var jannik = new Wichtel("Jannik", "Kolthof", string.Empty);
+            var moritz = new Wichtel("Moritz", "Jacobs", string.Empty);
+            var jan = new Wichtel("Jan", "Steinkamp", string.Empty);
+            var ingo = new Wichtel("Ingo", "Wilkosinski", string.Empty);
 
             #region LastPartner
 

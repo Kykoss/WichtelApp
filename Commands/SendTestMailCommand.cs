@@ -10,6 +10,6 @@ namespace WichtelApp.Commands
 
         public bool CanExecute(object? parameter) => true;
 
-        public void Execute(object? parameter) => MailHelper.SendTestMail();
+        public void Execute(object? parameter) => MailHelper.SendTestMails();
     }
 }

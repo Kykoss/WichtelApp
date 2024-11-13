@@ -25,7 +25,7 @@ namespace WichtelApp.Helper
             return mailMessage;
         }
 
-        public static void SendTestMail()
+        public static void SendTestMails()
         {
             var mockedDraw = new KeyValuePair<Wichtel, Wichtel>(new Wichtel("Robin", "Olde Meule", "robin.olde.meule1997@gmail.com"), new Wichtel("Lukas", "Empty", string.Empty));
             MailHelper.SendSMTPEmail(MailHelper.GetMailMessage(mockedDraw));
@@ -52,7 +52,7 @@ namespace WichtelApp.Helper
             MailHelper.SendSMTPEmail(MailHelper.GetMailMessage(mockedDraw));
         }
 
-        private static void SendSMTPEmail(MailMessage message)
+        public static void SendSMTPEmail(MailMessage message)
         {
             using (var client = new SmtpClient())
             {
